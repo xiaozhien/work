@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創造無限可能 | 您的品牌名稱</title>
+    <style>
+        /* 基本全域樣式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* 淺灰色背景，提供柔和感 */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 導航列樣式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #fff; /* 白色導航列 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 輕微陰影 */
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff; /* 品牌藍色 */
+            text-decoration: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* 英雄區塊 (最吸引人的部分) */
+        .hero {
+            height: 85vh; /* 佔據大部分視口高度 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #007bff, #00c6ff); /* 清新漸變背景 */
+            color: white;
+            padding: 20px;
+        }
+        .hero-title {
+            font-size: 3.5em; /* 巨大標題 */
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .hero-subtitle {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffc107; /* 醒目的行動黃色 */
+            color: #333;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px; /* 圓角按鈕 */
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            background-color: #e0a800; /* 懸停變深 */
+            transform: translateY(-2px); /* 輕微上浮效果 */
+        }
+
+        /* 特色/服務區塊 */
+        .features {
+            padding: 80px 50px;
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 響應式網格佈局 */
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .feature-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px); /* 懸停提升效果 */
+        }
+        .feature-item h3 {
+            color: #007bff;
+            font-size: 1.4em;
+            margin-top: 0;
+        }
+        .feature-icon {
+            font-size: 2em; /* 假設使用 icon font */
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        /* 頁尾 */
+        .footer {
+            text-align: center;
+            padding: 30px 50px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+            .nav-links {
+                display: none; /* 導航在手機上通常會隱藏到漢堡選單中 (需 JS 處理) */
+            }
+            .hero-title {
+                font-size: 2.5em;
+            }
+            .hero-subtitle {
+                font-size: 1.2em;
+            }
+            .features {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">您的品牌</a>
+        <nav class="nav-links">
+            <a href="#features">服務</a>
+            <a href="#about">關於我們</a>
+            <a href="#contact">聯絡</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="hero-title">重新定義您的數位體驗</h1>
+        <p class="hero-subtitle">我們專注於打造兼具美學與功能性的卓越產品，為您創造無限可能。</p>
+        <a href="#contact" class="cta-button">立即開始您的專案 &rarr;</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2>我們的核心優勢</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <h3>高效能網站</h3>
+                <p>極速加載，優化 SEO，確保用戶流暢體驗，讓您的內容快速觸達目標客戶。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">✨</div>
+                <h3>現代化設計</h3>
+                <p>遵循最新的設計趨勢，簡約、直觀、具備品牌獨特性，視覺效果引人入勝。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <h3>全裝置響應</h3>
+                <p>無論是手機、平板還是電腦，網站都能完美適應，提供一致且優質的瀏覽體驗。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; 2025 您的品牌名稱. All Rights Reserved.
+    </footer>
+
+    </body>
+</html>
